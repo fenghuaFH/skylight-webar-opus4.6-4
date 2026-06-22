@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { CameraView } from './components/CameraView';
 import { PermissionScreen } from './components/PermissionScreen';
 import { usePermissions, useDeviceOrientation, useGeolocation } from './lib/hooks';

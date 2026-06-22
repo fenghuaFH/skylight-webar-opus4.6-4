@@ -1,7 +1,6 @@
-import type { DeviceOrientationData, CelestialObject } from '@/types';
+import type { DeviceOrientationData } from '@/types';
 import type { SkyBody } from './celestial';
 
-const D2R = Math.PI / 180;
 
 /**
  * 将设备方向转换为天空视角（方位角 + 仰角）
@@ -120,7 +119,7 @@ function normalizeAzimuth(azimuth: number): number {
  * @param longitude 经度
  * @returns 磁偏角（度数，东为正）
  */
-export function getMagneticDeclination(latitude: number, longitude: number): number {
+export function getMagneticDeclination(_latitude: number, longitude: number): number {
   // 简化实现：返回粗略估计值
   // 生产环境应使用 NOAA WMM API 或本地库
   // 示例：北京约为 -6°，纽约约为 -13°，伦敦约为 0°
